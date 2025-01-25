@@ -1,0 +1,22 @@
+{
+  "name": "adopt_a_tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/main.scss ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NataliiaMataczynska/adopt-a-tree.git"
+  },
+  "author": "Nataliia Mataczyńska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliiaMataczynska/adopt-a-tree/issues"
+  },
+  "homepage": "https://github.com/NataliiaMataczynska/adopt-a-tree#readme",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}
