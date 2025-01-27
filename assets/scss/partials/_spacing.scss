@@ -1,0 +1,65 @@
+// ---------------------------
+// SPACING
+
+@import "variables";
+
+// Sass Map to store spacing values
+
+$spacing-map: (
+        'spacing': $spacing,
+        'spacing-2': $spacing-2,
+        'spacing-3': $spacing-3,
+        'spacing-half': $spacing-half,
+);
+
+// --------------------------------
+// SPACING: CLASSES
+// Generates classes for spacing on:
+// All Sides, Horizontal (h), Vertical (v), Left (l), Right (r), Top (t), Bottom (b)
+// Uses padding to create spacing
+// These are the spacing classes:
+// spacing, spacing-h, spacing-v, spacing-l, spacing-r, spacing-t, spacing-b
+// spacing-2, spacing-2-v, spacing-2-h, spacing-2-l, spacing-2-r, spacing-2-t, spacing-2-b
+// spacing-3, spacing-3-v, spacing-3-h, spacing-3-l, spacing-3-r, spacing-3-t, spacing-3-b
+// spacing-half, spacing-half-h, spacing-half-v, spacing-half-l, spacing-half-r, pacing-half-t, pacing-half-b
+
+// @each Sass loop to generate classes
+
+@each $name, $value in $spacing-map {
+  //Spacing: all states
+
+  .#{$name} {
+    padding: $value;
+  }
+
+  //Spacing: horizontal
+  .#{$name}-h {
+    padding-inline: $value;
+  }
+
+  //Spacing: vertical
+  .#{$name}-v {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  //Spacing: left
+  .#{$name}-l {
+    padding-left: $value;
+  }
+
+  //Spacing: right
+  .#{$name}-r {
+    padding-right: $value;
+  }
+
+  //Spacing: top
+  .#{$name}-t {
+    padding-top: $value;
+  }
+
+  //Spacing: bottom
+  .#{$name}-b {
+    padding-bottom: $value;
+  }
+}

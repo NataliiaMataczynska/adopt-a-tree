@@ -1,3 +1,6 @@
+@import "partials/spacing";
+@import "partials/variables";
+
 
 .styleguide-nav {
   position: relative;
@@ -35,4 +38,11 @@
   height: 60px;
   display: inline-block;
   margin: 10px;
+}
+
+.styleguide-demo-each--spacing {
+  > div {
+    background-color: $gray-mist;
+    margin: 0 0 $spacing 0;
+  }
 }

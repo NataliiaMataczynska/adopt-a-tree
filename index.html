@@ -12,30 +12,31 @@
 <body>
 <main class="main">
     <div class="styleguide">
-        <nav class="styleguide-nav" >
+        <nav class="styleguide-nav">
             <ul class="styleguide-sidebar list-reset" id="js-styleguide-sidebar">
-                <li><a href="#styleguide-section-guidelines" >Guidelines</a></li>
-                <li><a href="#styleguide-section-logo" >logo</a></li>
-                <li><a href="#styleguide-section-colors" >Colors</a></li>
-                <li><a href="#styleguide-section-spacing" >Spacing</a></li>
-                <li><a href="#styleguide-section-alignment" >Alignment</a></li>
-                <li><a href="#styleguide-section-media-queries" >Media Queries</a></li>
-                <li><a href="#styleguide-section-grid" >Grid</a></li>
+                <li><a href="#styleguide-section-guidelines">Guidelines</a></li>
+                <li><a href="#styleguide-section-logo">Logo</a></li>
+                <li><a href="#styleguide-section-colors">Colors</a></li>
+                <li><a href="#styleguide-section-spacing">Spacing</a></li>
+                <li><a href="#styleguide-section-alignment">Alignment</a></li>
+                <li><a href="#styleguide-section-media-queries">Media Queries</a></li>
+                <li><a href="#styleguide-section-grid">Grid</a></li>
                 <li><a href="#styleguide-section-accessibility">Accessibility</a></li>
-                <li><a href="#styleguide-section-typography" >Typography</a></li>
-                <li><a href="#styleguide-section-images" >Images</a></li>
-                <li><a href="#styleguide-section-icons" >Icons</a></li>
-                <li><a href="#styleguide-section-buttons" >Buttons</a></li>
-                <li><a href="#styleguide-section-forms" >Forms</a></li>
+                <li><a href="#styleguide-section-typography">Typography</a></li>
+                <li><a href="#styleguide-section-images">Images</a></li>
+                <li><a href="#styleguide-section-icons">Icons</a></li>
+                <li><a href="#styleguide-section-buttons">Buttons</a></li>
+                <li><a href="#styleguide-section-forms">Forms</a></li>
                 <li><a href="#styleguide-section-content-blocks">Content Blocks</a></li>
-                <li><a href="#styleguide-section-progress-bars" >Progress Bars</a></li>
-                <li><a href="#styleguide-section-avatars" >Avatars</a></li>
-                <li><a href="#styleguide-section-banners" >Banners</a></li>
-                <li><a href="#styleguide-section-lists" >Lists: Styled</a></li>
-                <li><a href="#styleguide-section-cards" >Cards</a></li>
-                <li><a href="#styleguide-section-loading" >Loading</a></li>
-                <li><a href="#styleguide-section-tabs" >Tabs<span class="styleguide-link"> </span></a></li>
-                <li><a href="#styleguide-section-sliders" >Slider &amp; Carousels <span class="styleguide-link"> </span></a></li>
+                <li><a href="#styleguide-section-progress-bars">Progress Bars</a></li>
+                <li><a href="#styleguide-section-avatars">Avatars</a></li>
+                <li><a href="#styleguide-section-banners">Banners</a></li>
+                <li><a href="#styleguide-section-lists">Lists: Styled</a></li>
+                <li><a href="#styleguide-section-cards">Cards</a></li>
+                <li><a href="#styleguide-section-loading">Loading</a></li>
+                <li><a href="#styleguide-section-tabs">Tabs<span class="styleguide-link"> </span></a></li>
+                <li><a href="#styleguide-section-sliders">Slider &amp; Carousels <span class="styleguide-link"> </span></a>
+                </li>
             </ul>
         </nav>
 
@@ -49,8 +50,8 @@
                 <div class="styleguide-section-docs">
                     <p>Use variables or classes for colors.</p>
                     <p>Background colors have a <code class="styleguide-code-inline">--bg</code> suffix.</p>
-                    <p>To incorporate a new color, add the color variable to the <em>variables</em>
-                    it in the Sass map inside the <em>colors</em> partial.</p>
+                    <p>To incorporate a new color, add the color variable to the <em>variables</em> it in the Sass map
+                        inside the <em>colors</em> partial.</p>
                 </div>
 
                 <div class="styleguide-section-block">
@@ -191,30 +192,130 @@
                         </div>
                         <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
                     </div>
-                    <!--<h3>Colors: Gray Spectrum</h3>
+                </div>
+            </section>
+            <section id="styleguide-section-spacing" class="styleguide-section">
+                <h2>Spacing</h2>
+                <div class="styleguide-section-docs">
+                    <p>Use variables or classes for spacing.</p>
+                    <p>Spacing helpers cam be used for padding, margins, positioning elements, etc.</p>
+                    <p>The spacing variables are  <code class="styleguide-code-inline"> $spacing, $spacing-2, $spacing-3,</code> and <code class="styleguide-code-inline" >$spacing-half</code>.</p>
+                    <p>The default <code class="styleguide-code-inline"> $spacing</code> variable's value is 10 pixels.</p>
+                    <p><code class="styleguide-code-inline"> $spacing-2</code> is twice the value of<code class="styleguide-code-inline"> $spacing</code> and so on.</p>
+                </div>
+                <div class="styleguide-section-block">
+                    <div class="styleguide-section-files">Reference files: _globals.scss, _spacing.scss, _variables.scss</div>
+                    <h3>Spacing: All Sides</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses padding on all four sides to create spacing.</p>
+                    </div>
                     <div class="styleguide-demo-block">
-                        <div class="styleguide-demo-each styleguide-demo-each&#45;&#45;colors">
-                            <div>
-                                <div class="color-error">$color-error</div>
-                                <div class="styleguide-box-demo color-error-bg"></div>
-                            </div>
-                            <div>
-                                <div class="color-success">$color-success</div>
-                                <div class="styleguide-box-demo color-success-bg"></div>
-                            </div>
-                            <div>
-                                <div class="color-info">$color-info</div>
-                                <div class="styleguide-box-demo color-info-bg"></div>
-                            </div>
-                            <div>
-                                <div class="color-disabled">$color-disabled</div>
-                                <div class="styleguide-box-demo color-disabled-bg"></div>
-                            </div>
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing">Spacing: All Sides</div>
+                            <div class="spacing-2">Spacing-2: All Sides</div>
+                            <div class="spacing-3">Spacing-3: All Sides</div>
+                            <div class="spacing-half">Spacing-half: All Sides</div>
                         </div>
-                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn&#45;&#45;brand">Code</button>-->
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
                     </div>
 
+                    <h3>Spacing: Horizontal</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses left and right padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-h">Spacing-h: Horizontal</div>
+                            <div class="spacing-2-h">Spacing-2: Horizontal</div>
+                            <div class="spacing-3-h">Spacing-3-h: Horizontal</div>
+                            <div class="spacing-half-h">Spacing-half-h: Horizontal</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
 
+                    <h3>Spacing: Vertical</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses top and bottom padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-v">Spacing-v: Vertical</div>
+                            <div class="spacing-2-v">Spacing-2-v: Vertical</div>
+                            <div class="spacing-3-v">Spacing-3-v: Vertical</div>
+                            <div class="spacing-half-v">Spacing-half-v: Vertical</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+
+                    <h3>Spacing: Left</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses left padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-l">Spacing-l: Left</div>
+                            <div class="spacing-2-l">Spacing-2-l: Left</div>
+                            <div class="spacing-3-l">Spacing-3-l: Left</div>
+                            <div class="spacing-half-l">Spacing-half-l: Left</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+                    <h3>Spacing: Right</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses right padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-r">Spacing-r: Right</div>
+                            <div class="spacing-2-r">Spacing-2-r: Right</div>
+                            <div class="spacing-3-r">Spacing-3-r: Right</div>
+                            <div class="spacing-half-r">Spacing-half-r: Right</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+                    <h3>Spacing: Top</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses top padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-t">Spacing-t: Top</div>
+                            <div class="spacing-2-t">Spacing-2-t: Top</div>
+                            <div class="spacing-3-t">Spacing-3-t: Top</div>
+                            <div class="spacing-half-t">Spacing-half-t: Top</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+
+                    <h3>Spacing: Bottom</h3>
+                    <div class="styleguide-section-docs">
+                        <p>Uses bottom padding to create spacing.</p>
+                    </div>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each styleguide-demo-each--spacing">
+                            <div class="spacing-b">Spacing-b: Bottom</div>
+                            <div class="spacing-2-b">Spacing-2-b: Bottom</div>
+                            <div class="spacing-3-b">Spacing-3-b: Bottom</div>
+                            <div class="spacing-half-b">Spacing-half-b: Bottom</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+
+                    <h3>Spacing: Reset padding on all sides</h3>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each">
+                            <div class="col gray-mist-bg padding-reset">Column: Reset Padding</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
+
+                    <h3>Spacing: Reset margins on all sides</h3>
+                    <div class="styleguide-demo-block">
+                        <div class="styleguide-demo-each">
+                            <div class="margin-reset">H2 Heading: Margins reset</div>
+                        </div>
+                        <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand">Code</button>
+                    </div>
                 </div>
             </section>
         </section>
