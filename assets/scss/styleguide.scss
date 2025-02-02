@@ -48,7 +48,7 @@
     margin: 0 0 $spacing 0;
   }
 }*/
-// Veriabls: Style Guide: Sidebar
+// Variabls: Style Guide: Sidebar
 $styleguide-sidebar-width: toRem(200px);
 $z-index-styleguide-menu: 1000;
 // STYLE GUIDE: BUTTON TO TOGGLE SIDEBAR ON MOBILE
@@ -243,7 +243,7 @@ $z-index-styleguide-menu: 1000;
 .btn-styleguide-code {
   margin: $spacing-2 auto $spacing-3;
   display: block;
-  width: 100px;
+  min-width: 100px;
 }
 
 // Style Guide: Demo Block: Colors for background color boxes

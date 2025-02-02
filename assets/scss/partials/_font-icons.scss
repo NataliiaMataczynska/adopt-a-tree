@@ -5,12 +5,13 @@
 
 @font-face {
   font-family: $font-family-icon;
-  src: url("#{icon-path}/picter.ttf") format('truetype');
-  url('#{icon-path}/picter.woff2') format('woff2');
-  url('#{icon-path}/picter.svg') format('svg');
+  src: url("#{icon-path}/picter.ttf") format('truetype'),
+        url("#{icon-path}/picter.woff2") format('woff2'),
+        url("#{icon-path}/picter.svg") format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
+
 }
  [class^='at-icon-'], [class*=" at-icon-"]{
    font-family: $font-family-icon !important;
@@ -23,11 +24,11 @@
  }
 
 .at-icon-atom:before {
-  content: '\e802';
+  content: '\e800';
 }
 
 .at-icon-logo:before {
-  content: '\e802';
+  content: '\e801';
 }
 
 .at-icon-arrow-down:before {

@@ -142,7 +142,7 @@ a, .link {
   color: $color-link;
   text-decoration: none;
   cursor: pointer;
-  transition: $transition-liner;
+  transition: $transition-linear;
 
   &:hover {
     color: $color-link-hover;
