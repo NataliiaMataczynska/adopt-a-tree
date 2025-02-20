@@ -141,3 +141,11 @@ $grid-gutter: toRem(7.5px);
 $grid-gutter-sm: math.div($grid-gutter, 2);
 $grid-gutter-lg: $grid-gutter * 2;
 
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
