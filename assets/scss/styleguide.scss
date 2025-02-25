@@ -305,4 +305,24 @@ ul {
   @include mq(lg) {
     background-color: green;
   }
+
+  @media screen and (orientation: landscape) {
+    background: pink;
+  }
+
+  @media screen and (orientation: portrait) {
+    background: blue;
+  }
+  
+  @media screen and (aspect-ratio: 6/3) {
+    background: peru;
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    background: olive;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: black;
+  }
 }
