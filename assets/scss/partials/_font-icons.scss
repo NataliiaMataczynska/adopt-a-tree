@@ -1,60 +1,102 @@
-// ---------------------------
-// FONT ICONS
+// --------------------------------------------
+//FONT ICONS
 @import "variables";
 
-
-@font-face {
+@font-face{
   font-family: $font-family-icon;
-  src: url("#{icon-path}/picter.ttf") format('truetype'),
-        url("#{icon-path}/picter.woff2") format('woff2'),
-        url("#{icon-path}/picter.svg") format('svg');
+  src: url("#{$icon-path}/icomoon.ttf") format("truetype"),
+  url("#{$icon-path}/icomoon.woff") format("woff"),
+  url("#{$icon-path}/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
-
 }
- [class^='at-icon-'], [class*=" at-icon-"]{
-   font-family: $font-family-icon !important;
-   speak: none;
-   font-style: normal;
-   font-weight: normal;
-   font-variant: normal;
-   text-transform: none;
-   line-height: 1;
- }
+
+[class^="at-icon-"], [class*=" at-icon-"]{
+  font-family: $font-family-icon !important;
+  speak: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
 
 .at-icon-atom:before {
-  content: '\e800';
+  content: "\e994";
 }
-
 .at-icon-logo:before {
-  content: '\e801';
+  content: "\e901";
 }
-
 .at-icon-arrow-down:before {
-  content: '\e802';
+  content: "\e90f";
 }
-
-.at-icon-arrow-right:before {
-  content: '\e802';
-}
-
 .at-icon-arrow-left:before {
-  content: '\e802';
+  content: "\e911";
 }
-
+.at-icon-arrow-right:before {
+  content: "\e913";
+}
 .at-icon-arrow-up:before {
-  content: '\e802';
+  content: "\e917";
 }
-
+.at-icon-chevron-down:before {
+  content: "\e92e";
+}
 .at-icon-chevron-left:before {
-  content: '\e802';
+  content: "\e92f";
 }
-
-.at-icon-user-chevron-right:before {
-  content: '\e802';
+.at-icon-chevron-right:before {
+  content: "\e930";
 }
-
+.at-icon-chevron-up:before {
+  content: "\e931";
+}
+.at-icon-card:before {
+  content: "\e94f";
+}
+.at-icon-dollar:before {
+  content: "\e955";
+}
+.at-icon-droplet:before {
+  content: "\e958";
+}
+.at-icon-home:before {
+  content: "\e97c";
+}
+.at-icon-map:before {
+  content: "\e98f";
+}
+.at-icon-cart:before {
+  content: "\e9d1";
+}
+.at-icon-target:before {
+  content: "\e9e4";
+}
+.at-icon-user-x:before {
+  content: "\e9fd";
+}
+.at-icon-user:before {
+  content: "\e9fe";
+}
+.at-icon-x:before {
+  content: "\ea0e";
+}
+.at-icon-loader:before {
+  content: "\e98a";
+}
+.at-icon-leaf:before {
+  content: "\e902";
+}
+.at-icon-restaurant:before {
+  content: "\e56c";
+}
+.at-icon-earth:before {
+  content: "\e903";
+}
+.at-icon-paw:before {
+  content: "\e904";
+}
 .at-icon-chevron-up:before {
   content: '\e802';
 }
